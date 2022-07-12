@@ -4,7 +4,7 @@
         <div class="py-4 lg:px-8 lg:border-0 mx-4 lg:mx-0">
             <div class="relative flex items-center">
 
-                <a class="mr-3 flex-none overflow-hidden w-auto" href="{{ url('profile') }}">
+                <a class="mr-3 flex-none overflow-hidden w-auto" href="{{ url('') }}">
                     <span class="sr-only">leagueoftalks home page</span>
                     <svg width="174" height="25" viewBox="0 0 174 25" xmlns="http://www.w3.org/2000/svg"
                          class="dark:fill-slate-500 dark:fill-text hover:fill-active">
@@ -53,7 +53,7 @@
                             </span>
                         </button>
 
-                        <a href="#" class="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
+                        <a href="{{ url('profile') }}" class="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
                             <span class="sr-only">Profile</span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                  stroke="currentColor" stroke-width="2">
