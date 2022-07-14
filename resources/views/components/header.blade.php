@@ -12,6 +12,8 @@
                     </svg>
                 </a>
 
+                <img class="max-h-[25px]" src="{{ asset('lol_logo.png') }}" alt="lol logo">
+
                 <div class="relative hidden lg:flex items-center ml-auto">
                     <nav class="text-sm leading-6 font-semibold text-slate-700 dark:text-slate-200">
                         <ul class="flex space-x-8">
