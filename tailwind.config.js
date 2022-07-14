@@ -22,7 +22,7 @@ module.exports = {
             graphics: '#3D2BCC',
             secondary: '#17263C',
             text: '#F1F3F8',
-            active: '#AD9E6F',
+            active: '#c79b3b',
             inherit: colors.inherit,
             current: colors.current,
             transparent: colors.transparent,
