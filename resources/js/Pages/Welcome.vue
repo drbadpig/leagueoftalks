@@ -1,3 +1,12 @@
+<script setup>
+defineProps({
+    canLogin: Boolean,
+    canRegister: Boolean,
+    laravelVersion: String,
+    phpVersion: String,
+})
+</script>
+
 <template>
     <Head title="Welcome" />
 
@@ -333,7 +342,7 @@ import Layout from "@/Layouts/Layout.vue";
 import {Head} from '@inertiajs/inertia-vue3'
 
 export default {
-    name: "Profile",
+    name: "Welcome",
     props: {
         title: String,
     },
