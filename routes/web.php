@@ -22,7 +22,9 @@ Route::get('/', function () {
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
-});
+})->name('home');
+
+Route::get('/profile', [\App\Http\Controllers\ProfileController::class, 'index'])->name('profile');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
