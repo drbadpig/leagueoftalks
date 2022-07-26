@@ -15,6 +15,8 @@ use Inertia\Inertia;
 |
 */
 
+Route::get('/test', [\App\Http\Controllers\IndexController::class, 'test']);
+
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
