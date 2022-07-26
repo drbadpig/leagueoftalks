@@ -25,5 +25,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\UsersOnline::factory(40)->create();
         // total visits
         \App\Models\Visit::factory(100)->create();
+        // categories
+        \App\Models\Category::factory(15)->create();
     }
 }
