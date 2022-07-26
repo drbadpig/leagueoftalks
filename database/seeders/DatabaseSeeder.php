@@ -37,5 +37,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\ComplaintReason::factory(3)->create();
         // complaints
         \App\Models\Complaint::factory(7)->create();
+        // news
+        \App\Models\News::factory(20)->create();
     }
 }
