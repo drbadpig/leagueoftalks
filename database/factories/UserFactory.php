@@ -20,7 +20,7 @@ class UserFactory extends Factory
     public function definition()
     {
         return [
-            'name' => fake()->name(),
+            'username' => fake()->name(),
             'email' => fake()->safeEmail(),
             'role_id' => fake()->numberBetween(Role::first()->id, DB::table('roles')->orderBy('id', 'desc')->first()->id),
             'email_verified_at' => now(),
