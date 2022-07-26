@@ -33,6 +33,8 @@ class DatabaseSeeder extends Seeder
         \App\Models\Talk::factory(20)->create();
         // comments
         \App\Models\Comment::factory(100)->create();
+        // complaint's reasons
+        \App\Models\ComplaintReason::factory(3)->create();
         // complaints
         \App\Models\Complaint::factory(7)->create();
     }

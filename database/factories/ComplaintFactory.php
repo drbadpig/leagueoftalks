@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Comment;
+use App\Models\ComplaintReason;
 use App\Models\Talk;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -25,6 +26,8 @@ class ComplaintFactory extends Factory
             'talk_id' => fake()->numberBetween(Talk::first()->id, DB::table('talks')->orderBy('id', 'desc')->first()->id),
             'comment_id' => fake()->numberBetween(Comment::first()->id, DB::table('comments')->orderBy('id', 'desc')->first()->id),
             'user_id' => null,
+            'reason_id' => fake()->numberBetween(ComplaintReason::first()->id, DB::table('complaint_reasons')->orderBy('id', 'desc')->first()->id),
+            'details' => fake()->sentence()
         ];
     }
 }
