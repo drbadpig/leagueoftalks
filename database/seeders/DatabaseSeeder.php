@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -14,9 +13,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-         \App\Models\User::factory(10)->create();
-         \App\Models\Achievement::factory(10)->create();
-         \App\Models\UsersAchievements::factory(20)->create();
-         \App\Models\UsersOnline::factory(40)->create();
+        \App\Models\Role::factory(4)->create();
+        \App\Models\User::factory(10)->create();
+        \App\Models\Achievement::factory(10)->create();
+        \App\Models\UsersAchievements::factory(20)->create();
+        \App\Models\UsersOnline::factory(40)->create();
     }
 }
