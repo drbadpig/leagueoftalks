@@ -20,7 +20,6 @@ class UsersOnlineFactory extends Factory
     {
         return [
             'user_id' => fake()->numberBetween(User::first()->id, DB::table('users')->orderBy('id', 'desc')->first()->id),
-            'date' => fake()->dateTime()
         ];
     }
 }
