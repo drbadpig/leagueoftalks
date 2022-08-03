@@ -5,7 +5,7 @@
             <div class="py-4 lg:px-8 lg:border-0 mx-4 lg:mx-0">
                 <div class="relative flex items-center">
 
-                    <Link :href="route('home')" class="mr-3 flex-none overflow-hidden w-auto">
+                    <Link :href="route('home')" class="flex-none overflow-hidden w-auto">
                         <span class="sr-only">leagueoftalks home page</span>
                         <svg width="174" height="25" viewBox="0 0 174 25" xmlns="http://www.w3.org/2000/svg"
                              class="fill-text hover:fill-active">
@@ -14,7 +14,10 @@
                         </svg>
                     </Link>
 
-                    <img class="max-h-[25px]" src="{{ asset('lol_logo.png') }}" alt="lol logo">
+                    <Link href="https://www.leagueoflegends.com/" class="ml-6">
+                        <img  class="max-h-[25px]" src="lol_logo.png" alt="lol logo">
+                    </Link>
+
 
                     <div class="relative hidden lg:flex items-center ml-auto">
                         <nav class="text-sm leading-6 font-semibold text-slate-700 dark:text-slate-200">
@@ -58,7 +61,7 @@
                             </button>
 
 
-                                <Link v-if="$page.props.auth.user" :href="route('profile')"
+                                <Link :href="route('profile')"
                                       class="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
                                     <span class="sr-only">Profile</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
@@ -68,19 +71,6 @@
                                               d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                                     </svg>
                                 </Link>
-
-                                <Link v-else :href="route('login')"
-                                      class="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
-                                    <span class="sr-only">Profile</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                                         viewBox="0 0 24 24"
-                                         stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                              d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                    </svg>
-                                </Link>
-
-
 
                             <Link v-if="$page.props.auth.user" :href="route('logout')" method="post" as="button"
                                   class="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
